@@ -1,4 +1,4 @@
-# react-adonis-typescript
+# TASK MANAGEMENT SYSTEM
   1. run "npm install"
   2. create .env file
   3. copy .env.example to .env
