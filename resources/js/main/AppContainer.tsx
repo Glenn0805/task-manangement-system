@@ -1,11 +1,11 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import LayoutComponent from './layout/LayoutComponent'
+import AppLayout from './layout/AppLayout'
 import './index.scss'
 const AppContainer = () => {
   return (
     <>
-      <LayoutComponent />
+      <AppLayout />
     </>
   )
 }
