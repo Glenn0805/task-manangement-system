@@ -1,7 +1,12 @@
 import React from 'react'
+import FoobarComponent from '../foobar/FoobarComponent'
 
 const TaskComponent: React.FC = () => {
-  return <div>TaskComponent</div>
+  return (
+    <>
+      <FoobarComponent />
+    </>
+  )
 }
 
 export default TaskComponent

@@ -2,13 +2,15 @@
 import React from 'react'
 import { decrementFunction,incrementFunction } from './foobar-actions'
 import useFoobarState from './hooks/useFoobarState'
-import { useDispatch } from 'react-redux'
+ import useAppDispatch from './hooks/useAppDispatch';
 import { Button } from 'antd';
+import { useDispatch } from 'react-redux';
+
 
 
 const FoobarComponent = () => {
   let numberState: any = useFoobarState('numberState')
- const dispatch=useDispatch()
+ const dispatch=useAppDispatch()
 
  const increment=()=>{
   dispatch(incrementFunction(numberState))
