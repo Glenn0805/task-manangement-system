@@ -1,5 +1,5 @@
 import React from 'react'
-import { FieldTimeOutlined } from '@ant-design/icons'
+import { ProjectOutlined, UserOutlined } from '@ant-design/icons'
 import { Link } from 'react-router-dom'
 
 const menuLabelLink: React.FC = (link: string, label: string) => {
@@ -12,7 +12,8 @@ const menuLabelLink: React.FC = (link: string, label: string) => {
 }
 
 const menu: { key: string; label: React.ReactNode; icon?: React.ReactNode }[] = [
-  { key: '1', label: menuLabelLink('/tasks', 'Tasks'), icon: <FieldTimeOutlined /> },
+  { key: '1', label: menuLabelLink('/', 'Tasks'), icon: <ProjectOutlined /> },
+  { key: '2', label: menuLabelLink('/account-setting', 'Account'), icon: <UserOutlined /> },
 ]
 
 export default menu

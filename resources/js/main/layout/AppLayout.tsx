@@ -4,7 +4,7 @@ import LayoutComponent from './LayoutComponent'
 const AppLayout: React.FC = () => {
   return (
     <Routes>
-      <Route path="/main" element={<LayoutComponent />} />
+      <Route path="/*" element={<LayoutComponent />} />
     </Routes>
   )
 }
