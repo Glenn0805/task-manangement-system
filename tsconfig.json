@@ -14,11 +14,9 @@
       "dom"
     ],
     "outDir": "build",
-    "rootDir": "./",
+    "rootDir": ".",
     "sourceMap": true,
-    "target": "es5",
-    "module": "CommonJS",
-    "moduleResolution": "node",
+    "target": "es6",
     "jsx": "react",
     "paths": {
       "App/*": [
