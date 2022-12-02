@@ -10,7 +10,7 @@ import { useDispatch } from 'react-redux';
 
 const FoobarComponent = () => {
   let numberState: any = useFoobarState('numberState')
- const dispatch=useAppDispatch()
+ const dispatch:Function=useDispatch()
 
  const increment=()=>{
   dispatch(incrementFunction(numberState))
