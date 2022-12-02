@@ -1,13 +1,11 @@
 import React from 'react'
-import FoobarComponent from './component/foobar/FoobarComponent'
-
-
-import 'bootstrap/dist/css/bootstrap.min.css';
-
+import 'bootstrap/dist/css/bootstrap.min.css'
+import AppLayout from './layout/AppLayout'
+import './index.scss'
 const AppContainer = () => {
   return (
     <>
-      <FoobarComponent />
+      <AppLayout />
     </>
   )
 }
