@@ -12,8 +12,16 @@ const menuLabelLink: React.FC = (link: string, label: string) => {
 }
 
 const menu: { key: string; label: React.ReactNode; icon?: React.ReactNode }[] = [
-  { key: '1', label: menuLabelLink('/', 'Tasks'), icon: <ProjectOutlined /> },
-  { key: '2', label: menuLabelLink('/account-setting', 'Account'), icon: <UserOutlined /> },
+  {
+    key: 'main',
+    label: menuLabelLink('/', 'Tasks'),
+    icon: <ProjectOutlined />,
+  },
+  {
+    key: 'account-setting',
+    label: menuLabelLink('/account-setting', 'Account'),
+    icon: <UserOutlined />,
+  },
 ]
 
 export default menu

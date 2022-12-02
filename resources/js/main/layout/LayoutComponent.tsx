@@ -9,7 +9,7 @@ import contentRoute from './content-route'
 
 const { Header, Sider, Content } = Layout
 const LayoutComponent: React.FC = () => {
-  let href = document.location.pathname.slice(1)
+  let href: string = document.location.hash.split('/')[1] || 'main'
 
   const [selectedKey, setSelectedKey] = useState(href)
   const [collapsed, setCollapsed] = useState(false)
